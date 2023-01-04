@@ -1,0 +1,12 @@
+[versions]
+paper-api = "1.19.3-R0.1-SNAPSHOT"
+adventure-core = "4.12.0"
+cloud-core = "1.7.1"
+
+[libraries]
+adventure-api = { group = "net.kyori", name = "adventure-api", version.ref = "adventure-core" }
+adventure-mm = { group = "net.kyori", name = "adventure-api", version.ref = "adventure-core" }
+cloud-api = { group = "cloud.commandframework", name = "cloud-core", version.ref = "cloud-core" }
+cloud-kotlin = { group = "cloud.commandframework", name = "cloud-kotlin-extensions", version.ref = "cloud-core" }
+cloud-minecraft-paper = { group = "cloud.commandframework", name = "cloud-paper", version.ref = "cloud-core" }
+cloud-minecraft-extras = { group = "cloud.commandframework", name = "cloud-minecraft-extras", version.ref = "cloud-core" }

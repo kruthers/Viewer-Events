@@ -1,0 +1,55 @@
+queue:
+  type: weighted
+  starting_weight: 5
+  weight_increment: 1
+handling:
+  auto_replace: true
+  inventory_handling: pass_on
+logout_timeouts:
+  queue: 1200
+  partipant: 0
+action_bar:
+  enabled: true
+  weighted: '<light_purple>In Queue <gray>You currently have <percent>% at being picked'
+  logical: '<light_purple>In Queue <gray>You currently are <position>/<queue_size> in the queue'
+  random: '<light_purple>In Queue <gray>You currently have <percent>% at being picked. There are <queue_size> other people in the queue'
+messages:
+  queue:
+    select:
+      private: '<green>You have been selected to take part in Piggles'' Event!'
+      public: '<b><gold>Queue</b><green> A new player has been selected from the queue: <player>'
+    join_queue: '<light_purple>You have been added to the queue'
+    remove:
+      private: '<red>You are no longer a participant in the event'
+      public: '<b><gold>Queue</b><red> <player> is no longer a participant'
+  commands:
+    select:
+      failed: '<red>Unable to find a player to select from the queue'
+      passed: '<green>Selected a player from the queue'
+    remove:
+      failed: '<red>No online participant found. </red><grey><i>If they have left the game they will be swapped/ removed automatically'
+      passed: '<grey><player> Has been removed from the Event.'
+    cycle:
+      no_old: '<red>No online participant found. </red><grey><i>If they have left the game they will be swapped/ removed automatically'
+      no_new: '<red>Unable to find a new player in the queue to swap for <player>'
+      swap: '<green>Swapped <old> for <new>'
+    list:
+      queue:
+        header: '<hover:show_text:''Format:<br><format>''><Gold>Currently queued players:</hover><gray><list>'
+        row: '<aqua>[</aqua><light_purple><position></light_purple><aqua>]</aqua> <player> <b>-</b><aqua> <weight></aqua>'
+      participants:
+        header: '<hover:show_text:''Format:<br><format>''><Gold>Current participants:</hover>gray><list>'
+        row: '<aqua>[</aqua><light_purple><position></light_purple><aqua>]</aqua> <player>'
+    swap:
+      no_old: '<red>Participant must be online. </red><grey><i>If they have left the game they will be swapped/ removed automatically'
+      no_new: '<red>New player failed to be selected'
+      swap: '<green>Swapped <old> for <new>'
+    remove_all: '<b><red>All participants have been returned to the queue'
+    select_all: '<b><green>Everyone in the queue has now been added as a participant'
+    settings:
+      mode: '<green>New selection method selected: <type>'
+      starting_weight: '<green>New queue starting weight selected: <input>'
+      increment_weight: '<green>New queue increment weight selected: <input>'
+      auto_replace: '<green>Queue will auto replace on death/ logout: <input>'
+      inventory_handling: '<green>New inventory handling method selected: <type>'
+      reload: '<gold>Queue plugin config reload'

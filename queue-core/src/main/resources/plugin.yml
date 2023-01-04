@@ -1,0 +1,5 @@
+main: com.kruthers.piggles.queuecore.queuedimension
+name: QueueDimension
+version: '${version}'
+description: '${description}'
+api-version: 1.19

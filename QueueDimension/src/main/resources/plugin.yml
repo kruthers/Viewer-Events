@@ -1,0 +1,6 @@
+main: com.kruthers.piggle.queuedimension.QueueDimension
+name: QueueDimension
+version: '${version}'
+description: '${description}'
+load: POSTWORLD
+api-version: 1.19
