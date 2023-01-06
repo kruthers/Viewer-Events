@@ -1,7 +1,7 @@
 plugins {
     kotlin("jvm") version "1.7.21"
     id("com.github.johnrengelman.shadow") version "7.1.2"
-    id("io.papermc.paperweight.userdev") version "1.3.9" apply false
+    id("io.papermc.paperweight.userdev") version "1.4.0" apply false
 }
 
 group = "com.kruthers.piggles"
@@ -23,6 +23,7 @@ subprojects {
     repositories{
         mavenCentral ()
         maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
+        maven { url = uri("https://jitpack.io") }
     }
 
     dependencies {

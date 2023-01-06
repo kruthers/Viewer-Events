@@ -1,0 +1,7 @@
+name: "QueueLink"
+main: "com.kruthers.piggles.permslink.QueuePermsLink"
+version: "${version}"
+description: '${description}'
+depend:
+    - QueueCore
+    - Vault

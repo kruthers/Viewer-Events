@@ -10,3 +10,4 @@ cloud-api = { group = "cloud.commandframework", name = "cloud-core", version.ref
 cloud-kotlin = { group = "cloud.commandframework", name = "cloud-kotlin-extensions", version.ref = "cloud-core" }
 cloud-minecraft-paper = { group = "cloud.commandframework", name = "cloud-paper", version.ref = "cloud-core" }
 cloud-minecraft-extras = { group = "cloud.commandframework", name = "cloud-minecraft-extras", version.ref = "cloud-core" }
+vault = { group = "com.github.MilkBowl", name = "VaultAPI", version = "1.7"}
